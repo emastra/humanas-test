@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Humanas Test</title>
+</head>
+<body style="background-color: #0d1117; color: #f1f1f1; font-size: 1.2rem; text-align: center; font-family: sans-serif; padding-top: 20vh;">
+
+<h1>Hello, Humanas!</h1>
+
+<script>
+const colors = [
+    "#0d1117", "#1a1a2e", "#2c3e50", "#1e1e1e", "#2d3436",
+    "#202124", "#1b262c", "#121212", "#141414", "#2e2e2e",
+    "#f39c12", "#1abc9c", "#9b59b6", "#e74c3c", "#2ecc71",
+    "#3498db", "#8e44ad", "#d35400", "#34495e", "#16a085",
+    "#3c40c6", "#575fcf", "#485460", "#0fbcf9", "#00d8d6"
+];
+
+document.addEventListener("click", () => {
+    console.log("clicked!");
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+});
+</script>
+</body>
+</html>
+
